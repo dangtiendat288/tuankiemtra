@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#1C6806"
+        android:gravity="center"
+        android:text="Thông tin cá nhân"
+        android:textColor="#EDE102"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Họ Tên:"
+                android:textColor="#f20"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="CMND:"
+                android:textColor="#f20"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/edt_cmnd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#6C89F1"
+        android:gravity="center"
+        android:text="Bằng cấp"
+        android:textColor="#EDE102"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_bangcap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trung cấp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cao Đẳng" />
+        <RadioButton
+            android:id="@+id/radioButton_dh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đại học" />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#6C89F1"
+        android:gravity="center"
+        android:text="Sở thích"
+        android:textColor="#EDE102"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_doc_bao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đọc báo"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_doc_sach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đọc sách"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_doc_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đọc Codeding"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#6C89F1"
+        android:gravity="center"
+        android:text="Thông tin bổ sung"
+        android:textColor="#EDE102"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_bosung"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi thông tin"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
